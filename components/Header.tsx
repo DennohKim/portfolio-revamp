@@ -1,9 +1,39 @@
-import React from 'react'
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <div>I am a Header</div>
+    <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+        <div className='flex flex-row items-center'>
+        <SocialIcon
+         url="https://twitter.com/mbiebuz"
+         fgColor="gray"
+         bgColor="transparent"
+         />
+         <SocialIcon
+         url="https://www.linkedin.com/in/dennis-kimathi-46326711b/"
+         fgColor="gray"
+         bgColor="transparent"
+         />
+         <SocialIcon
+         url="https://github.com/dennohkim"
+         fgColor="gray"
+         bgColor="transparent"
+         />
+
+        </div>
+        <div className='flex flex-row items-center text-gray-300 cursor-pointer'>
+        <SocialIcon
+         fgColor="gray"
+         bgColor="transparent"
+         className="cursor-pointer"
+         network="email"
+         />
+         <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get In Touch</p>
+
+        </div>
+    </header>
   )
 }
