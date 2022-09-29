@@ -49,7 +49,6 @@ const Hero = (props: Props) => {
         </Link>
       
       </div>
-
       </div>
       
     </div>
