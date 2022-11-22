@@ -10,6 +10,7 @@ const Projects = (props: Props) => {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl lg:pb-10 ">
         Projects
       </h3>
+      
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
         {projects.map((project, index) => (
           <motion.div
@@ -28,7 +29,7 @@ const Projects = (props: Props) => {
               alt=""
             />
 
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl ">
+            <div className="space-y-10 px-0 md:px-10 max-w-7xl mx-auto ">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {index + 1} of {projects.length}:
@@ -46,7 +47,7 @@ const Projects = (props: Props) => {
           </motion.div>
         ))}
       </div>
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-0" />
+      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
     </div>
   );
 };

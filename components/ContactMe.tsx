@@ -14,7 +14,7 @@ type Inputs = {
 
 const ContactMe = (props: Props) => {
 
-    const { handleSubmit, register, formState: { errors } } = useForm();
+    const { handleSubmit, register, formState: { errors } } = useForm<Inputs>();
     const onSubmit:  SubmitHandler<Inputs> = formData => {
         window.location.href = `mailto:kimathidennis38@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}(${formData.email})`;
     };
