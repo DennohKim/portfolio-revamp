@@ -31,6 +31,18 @@ const ContactMe = (props: Props) => {
             <p className="text-2xl">123 Developer Lane</p>
           </div>
         </div>
+
+        <form className="flex flex-col space-y-2 w-fit mx-auto ">
+            <div className="flex space-x-2 ">
+                <input placeholder="Name"  type="text"   className="contactInput"/>
+                <input placeholder="Email"  type="email" className="contactInput"/>
+            </div>
+
+            <input placeholder="Subject" type="text" className="contactInput"/>
+
+            <textarea placeholder="Message" className="contactInput"/>
+            <button type="submit" className="bg-[#f7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg ">Submit</button>
+        </form>
       </div>
     </div>
   );
