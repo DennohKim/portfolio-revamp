@@ -11,7 +11,7 @@ const Projects = (props: Props) => {
         Projects
       </h3>
       
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin">
         {projects.map((project, index) => (
           <motion.div
             key={index}
@@ -29,7 +29,7 @@ const Projects = (props: Props) => {
               alt=""
             />
 
-            <div className="space-y-10 px-0 md:px-10 max-w-7xl mx-auto ">
+            <div className="space-y-10 px-0 md:px-10 max-w-7xl mx-auto  ">
               <h4 className="text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
                   Case Study {index + 1} of {projects.length}:
