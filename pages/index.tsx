@@ -34,14 +34,14 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header socials={socials}/>
 
       <section id="hero" className="snap-start">
-        <Hero />
+        <Hero  />
       </section>
 
       <section id="about" className="snap-center">
-        <About />
+        <About  />
       </section>
 
       {/* Experience */}
@@ -51,11 +51,11 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 
       {/* Skills */}
       <section id="skills" className="snap-start ">
-        <Skills />
+        <Skills  />
       </section>
 
       <section id="projects" className="snap-start">
-        <Projects />
+        <Projects  />
       </section>
 
       {/* Contact Me */}
@@ -96,7 +96,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       pageInfo,
     },
 
-    //Nextja will attempt to regenerate the page every 10 seconds
+    //Nextjs will attempt to regenerate the page every 10 seconds
     revalidate: 10,
   };
 };
