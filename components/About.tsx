@@ -1,9 +1,12 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import { PageInfo } from '../typings';
 
-type Props = {}
+type Props = {
+    pageInfo: PageInfo
+}
 
-const About = (props: Props) => {
+const About = ({pageInfo}: Props) => {
   return (
     <motion.div
     initial={{opacity: 0}}
@@ -33,7 +36,7 @@ const About = (props: Props) => {
     <div className="space-y-10 px-0 md:px-10 ">
         <h4 className="text-4xl font-semibold">Here is a <span className="underline decoration-[#F7AB0A]/50">little</span>  background</h4>
         <p className="text-base">
-        I am a highly-motivated, creative and pro-active designer and web developer able to research, design and develop user experiences for various digital products including mobile applications, websites and web applications. I use my broad range of skills to execute designs that are clean, simple and effective.
+        {pageInfo?.backgroundInformation}
         </p>
     </div>
     

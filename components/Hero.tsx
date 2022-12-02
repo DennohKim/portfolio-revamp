@@ -2,14 +2,17 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { PageInfo } from "../typings";
 import BackgroundCircles from "./BackgroundCircles";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo
+};
 
-const Hero = (props: Props) => {
+const Hero = ({pageInfo}: Props) => {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, The name is Chizaa",
+      `Hi, The name is ${pageInfo?.name}`,
       "Guy-who-loves-Coffee.tsx",
       "<ButLovesToCodeMore/>",
     ],
@@ -20,7 +23,7 @@ const Hero = (props: Props) => {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <Image
-        src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+        src={"https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"}
         objectFit="cover"
         layout="fixed"
         alt="Profile photo"
@@ -29,7 +32,7 @@ const Hero = (props: Props) => {
         className="relative rounded-full mx-auto object-cover"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">Software Engineer</h2>
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">{pageInfo?.role}</h2>
       <h1 className="text-5xl lg:text-6xlfont-semibold scroll-px-10">
         <span className="mr-3 ">{text}</span>
         <Cursor cursorColor="#F7ABBA" />
