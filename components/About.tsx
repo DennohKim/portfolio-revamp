@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { PageInfo } from '../typings';
+import { urlFor } from '../sanity';
 
 type Props = {
     pageInfo: PageInfo
@@ -16,7 +17,7 @@ const About = ({pageInfo}: Props) => {
         <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl lg:pb-10 ">About</h3>
 
         <motion.img
-        src="https://images.unsplash.com/photo-1586716402203-79219bede43c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
+        src={urlFor(pageInfo?.profilePic).url()}
         initial={{
             x: -200,
             opacity: 0,

@@ -20,7 +20,7 @@ const Skill = ({skill, directionLeft}: Props) => {
         transition = {{ duration: 1}}
         whileInView={{ opacity: 1, x: 0}}
         src={urlFor(skill?.image).url()}
-        className='rounded-full border border-gray-500 object-cover w-16 h-16 md:w-20 md:h-20 xl:w-20 xl:h-20 filter group-hover:grayscale transition duration-300 ease-in-out'
+        className='rounded-full border border-gray-500 object-cover w-16 h-16 md:w-20 md:h-20 xl:w-18 xl:h-18 filter group-hover:grayscale transition duration-300 ease-in-out'
 
         
         />

@@ -16,6 +16,7 @@ import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProject";
 import { fetchSocials } from "../utils/fetchSocials";
+import { urlFor } from "../sanity";
 
 type Props = {
   pageInfo: PageInfo;
@@ -55,7 +56,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       </section>
 
       <section id="projects" className="snap-start">
-        <Projects  />
+        <Projects projects={projects} />
       </section>
 
       {/* Contact Me */}
@@ -68,7 +69,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 object-cover rounded-full filter grayscale hover:grayscale-0 cursor-pointer "
-              src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              src={urlFor(pageInfo?.profilePic).url()}
               alt=""
             />
           </div>
