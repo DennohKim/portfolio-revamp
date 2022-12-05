@@ -40,13 +40,13 @@ const Projects = ({ projects }: Props) => {
                 </span>
                 {project?.title}
               </h4>
-              <div className="flex items-center space-x-2 justify-center">
+              <div className="flex items-center space-x-6 justify-center">
                 {project?.technologies.map((technology) => (
                   <img
                     key={technology._id}
                     src={urlFor(technology?.image).url()}
                     alt={technology.title}
-                    className="h-12 w-12 object-auto"
+                    className="h-12 w-12 object-cover object-center rounded-full"
                   />
                 ))}
               </div>
