@@ -42,7 +42,7 @@ const Projects = ({ projects }: Props) => {
               </h4>
               <div className="flex items-center space-x-6 justify-center">
                 {project?.technologies.map((technology) => (
-                  <img
+                  <motion.img
                     key={technology._id}
                     src={urlFor(technology?.image).url()}
                     alt={technology.title}
