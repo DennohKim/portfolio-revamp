@@ -53,7 +53,7 @@ const Projects = ({ projects }: Props) => {
                   />
                 ))}
               </div>
-              <div className="xxs:w-1/4 xs:w-1/2 md:w-full  mx-auto flex items-center flex-wrap">
+              <div className="xxs:w-1/3 xs:w-1/2 md:w-full  mx-auto flex items-center flex-wrap">
                 <p className="xxs:text-sm md:text-base text-center xs:w-1/2 lg:w-3/4 mx-auto ">{project?.summary}</p>
               </div>
             </div>
