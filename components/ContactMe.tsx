@@ -33,17 +33,17 @@ const ContactMe = (props: Props) => {
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center ">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"  />
-            <p className="text-xl">+1234567890</p>
+            <p className="text-xl">+254743312265</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center ">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"  />
-            <p className="text-xl">papareact.team@gmail.com</p>
+            <p className="text-xl">kimathidennis38@gmail.com</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center ">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"  />
-            <p className="text-xl">123 Developer Lane</p>
+            <p className="text-xl">A call away</p>
           </div>
         </div>
 
