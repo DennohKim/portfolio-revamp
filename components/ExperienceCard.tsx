@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 import React from "react";
 import { urlFor } from "../sanity";
@@ -33,7 +32,7 @@ const ExperienceCard = ({experience}: Props) => {
         <p className="font-bold text-2xl mt-1">{experience.company}</p>
         <div className="flex space-x-2 my-2">
           {experience.technologies.map((technology) => (
-            <img key={technology._id} className="h-10 w-10 rounded-full object-cover" src={urlFor(technology.image).url()}/>
+            <img key={technology._id} className="h-10 w-10 rounded-full object-cover" src={urlFor(technology.image).url()} alt="tech logos"/>
           ))}
           
           {/* <Image
