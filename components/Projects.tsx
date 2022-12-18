@@ -10,11 +10,11 @@ type Props = {
 const Projects = ({ projects }: Props) => {
   return (
     <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0  ">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl lg:pb-10 ">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 sm:text-md md:text-2xl lg:pb-10 ">
         Projects
       </h3>
 
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin">
         {projects.map((project, index) => (
           <motion.div
             key={index}
@@ -29,12 +29,12 @@ const Projects = ({ projects }: Props) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
-              className="h-48 w-3/4 object-cover"
+              className="h-72 sm:1/2 md:w-3/4 object-cover"
               alt=""
             />
 
             <div className="space-y-10 px-0 md:px-10 max-w-7xl mx-auto  ">
-              <h4 className="text-4xl font-semibold text-center">
+              <h4 className="sm:text-2xl md:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50 mr-3">
                   Case Study {index + 1} of {projects.length}:
                 </span>
@@ -51,7 +51,7 @@ const Projects = ({ projects }: Props) => {
                 ))}
               </div>
 
-              <p className="text-lg text-center md:text-left">
+              <p className="text-lg text-center ">
                 {project?.summary}
               </p>
             </div>

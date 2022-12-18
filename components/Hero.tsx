@@ -55,7 +55,7 @@ const Hero = ({ pageInfo }: Props) => {
           </Link>
         </div>
         <div className="mt-2">
-          <a href="https://resume.showwcase.com/dennohkim.pdf" target="_blank" >
+          <a href="https://resume.showwcase.com/dennohkim.pdf" target="_blank" rel="noreferrer" >
             <button className="heroButton">Download Resume</button>
           </a>
         </div>
