@@ -43,7 +43,7 @@ const ContactMe = (props: Props) => {
 
           <div className="flex items-center space-x-5 justify-center ">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"  />
-            <p className="text-xl">A call away</p>
+            <p className="text-xl">Nairobi Garage, General Mathenge, Westlands</p>
           </div>
         </div>
 
