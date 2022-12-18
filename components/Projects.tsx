@@ -9,7 +9,7 @@ type Props = {
 
 const Projects = ({ projects }: Props) => {
   return (
-    <div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0  ">
+    <div className="h-screen relative flex overflow-hidden flex-col md:flex-row max-w-full justify-evenly mx-auto items-center z-0  ">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 sm:text-md md:text-2xl lg:pb-10 ">
         Projects
       </h3>
@@ -20,6 +20,7 @@ const Projects = ({ projects }: Props) => {
             key={index}
             className="flex flex-shrink-0 snap-center flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
           >
+            <div className="">
             <motion.img
               initial={{
                 y: -300,
@@ -29,11 +30,13 @@ const Projects = ({ projects }: Props) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={urlFor(project?.image).url()}
-              className="h-72 sm:1/2 md:w-3/4 object-cover"
+              className="h-72 w-full object-cover object-center"
               alt=""
             />
+            </div>
+            
 
-            <div className="space-y-10 px-0 md:px-10 max-w-7xl mx-auto  ">
+            <div className="space-y-10 px-0 md:px-20 max-w-7xl mx-auto  ">
               <h4 className="sm:text-2xl md:text-4xl font-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50 mr-3">
                   Case Study {index + 1} of {projects.length}:
@@ -50,10 +53,9 @@ const Projects = ({ projects }: Props) => {
                   />
                 ))}
               </div>
-
-              <p className="text-lg text-center ">
-                {project?.summary}
-              </p>
+              <div className="xxs:w-1/4 xs:w-1/2 md:w-full  mx-auto flex items-center flex-wrap">
+                <p className="xxs:text-sm md:text-base text-center xs:w-1/2 lg:w-3/4 mx-auto ">{project?.summary}</p>
+              </div>
             </div>
           </motion.div>
         ))}
