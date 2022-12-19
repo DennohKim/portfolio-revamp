@@ -32,11 +32,11 @@ const About = ({pageInfo}: Props) => {
             duration: 1.2,
         }}
         viewport={{ once:true }}
-        className="-mb-20 md:mb-0 flex:shrink w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
+        className="-mb-20 mt-10 md:mb-0 flex:shrink w-36 h-36 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
     />
-    <div className="space-y-10 px-0 md:px-10 ">
-        <h4 className="font-jakarta text-4xl font-semibold">Here is a <span className="underline decoration-[#F7AB0A]/50">little</span>  background</h4>
-        <p className="font-jakarta text-base">
+    <div className="space-y-7 px-0 md:px-10 ">
+        <h4 className="font-jakarta xxs:text-2xl sm:text-4xl font-semibold">Here is a <span className="underline decoration-[#F7AB0A]/50">little</span>  background</h4>
+        <p className="font-jakarta xxs:text-[12px] md:text-base">
         {pageInfo?.backgroundInformation}
         </p>
     </div>

@@ -24,26 +24,26 @@ const ContactMe = (props: Props) => {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 sm:text-md md:text-2xl lg:pb-10 ">
         Contact
       </h3>
-      <div className="flex flex-col space-y-6 mt-12">
+      <div className="flex flex-col space-y-6 mt-28">
         <h4 className="xs:text-xl md:text-3xl font-semibold text-center">
           I have got just what you need.
           <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
         </h4>
 
-        <div className="space-y-10">
+        <div className="space-y-6">
           <div className="flex items-center space-x-3 justify-center ">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"  />
-            <p className="xs:text-lg md:text-xl">+254743312265</p>
+            <p className="xs:text-md md:text-lg">+254743312265</p>
           </div>
 
           <div className="flex items-center space-x-3 justify-center ">
             <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"  />
-            <p className="xs:text-lg md:text-xl">kimathidennis38@gmail.com</p>
+            <p className="xs:text-md md:text-lg">kimathidennis38@gmail.com</p>
           </div>
 
           <div className="flex items-center space-x-3 justify-center ">
             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"  />
-            <p className="xs:text-lg md:text-xll">Nairobi Garage, General Mathenge, Westlands</p>
+            <p className="xs:text-md md:text-lg">Nairobi Garage, General Mathenge, Westlands</p>
           </div>
         </div>
 
