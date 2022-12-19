@@ -32,7 +32,7 @@ const About = ({pageInfo}: Props) => {
             duration: 1.2,
         }}
         viewport={{ once:true }}
-        className="-mb-20 md:mb-0 flex:shrink w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
+        className="-mb-20 md:mb-0 flex:shrink w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px]"
     />
     <div className="space-y-10 px-0 md:px-10 ">
         <h4 className="text-4xl font-semibold">Here is a <span className="underline decoration-[#F7AB0A]/50">little</span>  background</h4>
