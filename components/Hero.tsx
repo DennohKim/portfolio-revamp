@@ -33,30 +33,30 @@ const Hero = ({ pageInfo }: Props) => {
         className="relative rounded-full mx-auto object-cover"
       />
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
+        <h2 className="font-jakarta text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           {pageInfo?.role}
         </h2>
-        <h1 className="xxs:text-3xl sm:text-4xl md:text-5xl lg:text-6xlfont-semibold scroll-px-10">
-          <span className="mr-3 ">{text}</span>
+        <h1 className=" font-jakarta xxs:text-3xl sm:text-4xl md:text-5xl lg:text-6xlfont-semibold scroll-px-10">
+          <span className="mr-3 font-jakarta font-bold">{text}</span>
           <Cursor cursorColor="#F7ABBA" />
         </h1>
         <div className="pt-5">
           <Link href="#about">
-            <button className="heroButton">About</button>
+            <button className="heroButton font-jakarta">About</button>
           </Link>
           <Link href="#experience">
-            <button className="heroButton">Experience</button>
+            <button className="heroButton font-jakarta">Experience</button>
           </Link>
           <Link href="#skills">
-            <button className="heroButton">Skills</button>
+            <button className="heroButton font-jakarta">Skills</button>
           </Link>
           <Link href="#projects">
-            <button className="heroButton">Projects</button>
+            <button className="heroButton font-jakarta">Projects</button>
           </Link>
         </div>
         <div className="mt-2">
           <a href="https://resume.showwcase.com/dennohkim.pdf" target="_blank" rel="noreferrer" >
-            <button className="heroButton">Download Resume</button>
+            <button className="heroButton font-jakarta">Download Resume</button>
           </a>
         </div>
       </div>

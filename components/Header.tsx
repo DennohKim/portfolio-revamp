@@ -62,7 +62,7 @@ export default function Header({ socials }: Props) {
             className="cursor-pointer"
             network="email"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400 font-jakarta">
             Get In Touch
           </p>
         </motion.div>

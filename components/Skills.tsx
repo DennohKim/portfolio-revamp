@@ -15,7 +15,7 @@ const Skills = ({ skills }: Props) => {
       transition={{ duration: 1.5 }}
       className="h-screen flex flex-col relative text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 sm:text-md md:text-2xl lg:pb-10 ">
+      <h3 className="font-jakarta absolute top-24 uppercase tracking-[20px] text-gray-500 sm:text-md md:text-2xl lg:pb-10 ">
         Skills
       </h3>
 

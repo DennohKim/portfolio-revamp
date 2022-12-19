@@ -11,6 +11,9 @@ module.exports = {
         'xxs': '360px',
      
       },
+      fontFamily: {
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [
